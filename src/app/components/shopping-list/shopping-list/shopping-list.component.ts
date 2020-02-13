@@ -1,5 +1,5 @@
 import { Component } from '@angular/core'
-import { Ingredient } from 'src/shared/ingredient.model'
+import { Ingredient } from 'src/app/shared/ingredient.model'
 
 @Component({
   selector: 'app-shopping-list',
@@ -11,7 +11,7 @@ export class ShoppingListComponent {
     new Ingredient('Pasta', 10),
     new Ingredient('Tomato Sauce', 2)
   ];
-  
+
   onIngredientAdded(ingredient: Ingredient) {
     this.ingredients.push(ingredient)
   }
