@@ -3,7 +3,6 @@ import { EventEmitter } from '@angular/core'
 import { Ingredient } from 'src/app/shared/ingredient.model'
 
 export class RecipeService {
-    recipeSelected = new EventEmitter<Recipe>();
     private recipes: Recipe[] = [
         new Recipe(
             "Pizza",
@@ -27,5 +26,9 @@ export class RecipeService {
 
     getRecipes() {
         return this.recipes.slice()
+    }
+
+    getRecipe(index: number) {
+        return this.recipes.slice()[index];
     }
 }
