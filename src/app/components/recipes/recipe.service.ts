@@ -16,6 +16,7 @@ export class RecipeService {
         new Recipe(
             'Paella',
             'Delicioso platillo español',
+            // tslint:disable-next-line: max-line-length
             'https://food.fnr.sndimg.com/content/dam/images/food/fullset/2011/5/20/0/CCTUL104_Ultimate-Paella_s4x3.jpg.rend.hgtvcom.826.620.suffix/1384541152950.jpeg',
             [
                 new Ingredient('Rice', 50),
